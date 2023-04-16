@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="loader loader-index">
+
+    </div>
+
+    <a href="#herobanner" id="bouton-page-up"><i class="fa-solid fa-arrow-up"></i></a>
+
+    <header>
+        <!--Bandeau d'information (Haut)-->
+        <div class="bandeau--informations">
+            <div class="bandeau--contact">
+                <a href="" class="hover-effect" title="Contact"><i class="fa-solid fa-user icon"></i> Lubin Fongarland</a>
+                <a href="tel:" class="hover-effect" title="Téléphone"><i class="fa-solid fa-phone icon"></i> 06 00 00 00 00</a>
+                <a href="mailto:" class="hover-effect" title="Adresse Mail"><i class="fa-solid fa-at icon"></i> contact@fongarland.dev</a>
+            </div>
+            <!--<div class="bandeau--deco"></div>-->
+            <ul>
+                <li><a href="https://github.com/DevArPro"><i class="fab fa-github" role="link" aria-label="" title="Github"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin-in" role="link" aria-label="" title="Linkedin"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-instagram" role="link" title="Instagram"></i></a></li>
+            </ul>
+        </div>
+        <!--Header principal-->
+        <div class="header--principal">
+            <!--Partie gauche-->
+            <div class="header--gauche">
+                <a href="" title="Accueil"><img src="assets/img/logo.png" alt="Logo Lubin fongarland"></a>
+                <div class="header--titles">
+                    <h2>LUBIN FONGARLAND</h2>
+                    <p>Développeur web</p>
+                </div>
+            </div>
+            <!--Partie droite (Barre de navigation)-->
+            <div class="header--droit">
+                <div class="menu--icon" id="nav-toggle" role="navigation" onclick="menuMobile()"> <!--Menu Adaptatif Mobile-->
+                    <i class="fas fa-bars" aria-label="Menu de navigation"></i> 
+                </div>
+                <nav id="nav-menu" class="nav"> <!--Menu de navigation-->
+                    <ul>
+                        <li><a href="" class="nav-link active" onclick="linkMenuMobile()">Accueil</a></li>
+                        <li><a href="" class="nav-link" onclick="linkMenuMobile()">A propos</a></li>
+                        <li><a href="" class="nav-link" onclick="linkMenuMobile()">Projets</a></li>
+                        <li><a href="" class="nav-link" onclick="linkMenuMobile()">Prestations</a></li>
+                        <li><a href="" class="nav-link" onclick="linkMenuMobile()">Blog</a></li>
+                        <li><a href="" class="nav-link orange" onclick="linkMenuMobile()">Contact <i class="fa-regular fa-paper-plane icon"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main id="herobanner">
+        <div class="herobanner--principal">
+            <div class="contenu--gauche">
+                <div class="sub--title">
+                    <span class="barre-titre">|</span>
+                    <h2 class="orange" data-aos="fade-right" data-aos-delay="100">DEV WEB FReeLANCE</h2>
+                </div>
+                <h1>Besoin d'un site internet pour votre entreprise ?</h1>
+                <p data-aos="fade-up" data-aos-delay="500">Développeur web spécialisé dans le développement front-end, je réalise vos sites web sur demande depuis 2021. <a href="#about" class="black hover-effect">En savoir plus...</a></p>
+                <!--<div class="whouare">
+                    <label for="whouare">VOUS ETES...</label>
+                    <select name="whouare" id="whouare">
+                        <option value="entre">UNE ENTREPRISE</option>
+                        <option value="art">UN ARTISAN</option>
+                        <option value="asso">UNE ASSOCIATION</option>
+                    </select>
+                </div>-->
+                <div class="herobanner--boutons">
+                    <a href="" class="cta">ME CONTACTER</a>
+                </div>
+            </div>
+            <div class="contenu--droit">
+                <img src="assets/img/portrait.png" alt="">
+            </div>
+            <img src="assets/img/noun-mouse-scroll-down-486805.svg" alt="Scroll downn" id="scroll-down">
+        </div>
+    </main>
+
+    <section id="infosection" class="black--section">
+        <div class="bg"></div>
+        <div class="bg--img"></div>
+        <div class="contenu activeContenu" data-anim="1">
+            <h3><i class="fa-solid fa-circle-info"></i> INFORMATION</h3>
+            <h2>Nouveau <span class="orange">site web</span> !</h2>
+            <p>Bienvenue sur la toute dernière version de mon site internet. Il est possible que celui-ci soit toujours en cours de construction, <br> mais il viendra à se finaliser dans les jours à venir :)</p>
+        </div>
+        <div class="contenu" data-anim="2">
+            <h3><i class="fa-solid fa-gift"></i> OFFRE 2022</h3>
+            <h2>-10% pour les <span class="orange">nouveaux clients</span></h2>
+            <p>Première fois que l'on se rencontre ? Bénéficiez de 10% de réduction sur toutes mes prestations*.</p>
+            <p class="condition">*Offre valable jusqu'au 31/12/2022</p>
+        </div>
+
+        <div class="container--onglets">
+            <div class="onglets onglet-actif" data-anim="1" id="info">
+            </div>
+            <div class="onglets" data-anim="2" id="offre">
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="white--section">
+        <div class="container--about">
+            <div class="about--principal">
+                <div class="about--texte">
+                    <div class="about--title">
+                        <div id="about-portrait"></div>
+                        <h2>A propos</h2>
+                    </div>
+                    <div class="texte--content">
+                        <div class="texte">
+                            <p>Avant tout passionné d'informatique et de développement web, j'ai décidé de devenir freelance en développement web en parrallèle de mes études.</p>
+                            <p>Du <span class="strong">design de l'interface utilisateur</span> au <span class="strong">développement d'applications web</span>, en passant par l'<span class="strong">optimisation du référencement naturel</span>, je propose diverses solutions aux entreprises souhaitant créer ou refaire leur site internet.</p>
+                        </div>
+                        <div class="image--profil"></div>
+                    </div>
+                </div>
+                <div class="about--loisirs">
+                    <h3>CENTRES D'INTERET</h3>
+                    <ul>
+                        <li>
+                            <div class="loisir-icone" data-aos="zoom-in" data-aos-delay="400">
+                                <i class="fa-solid fa-person-hiking loisir-illustration"></i>
+                            </div>
+                            <p>Randonnée</p>
+                        </li>
+                        <li>
+                            <div class="loisir-icone" data-aos="zoom-in" data-aos-delay="600">
+                                <i class="fa-solid fa-bicycle loisir-illustration"></i>
+                            </div>
+                            <p>VTT/Route</p>
+                        </li>
+                        <li>
+                            <div class="loisir-icone" data-aos="zoom-in" data-aos-delay="800">
+                                <i class="fa-solid fa-guitar loisir-illustration"></i>
+                            </div>
+                            <p>Guitare</p>
+                        </li>
+                        <li>
+                            <div class="loisir-icone" data-aos="zoom-in" data-aos-delay="1000">
+                                <i class="fa-solid fa-computer loisir-illustration"></i>
+                            </div>
+                            <p>Codage</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <aside class="about--aside">
+                <div class="about--competences">
+                    <h3>COMPETENCES</h3>
+                    <div class="progressbar" id="html" title="HTML">
+                        <div class="jauge" data-aos="fade-right">
+                            <i class="fa-brands fa-html5 progressbar-icon"></i>
+                            <p>HTML</p>
+                        </div>
+                    </div>
+                    <div class="progressbar" id="css" title="Css">
+                        <div class="jauge" data-aos="fade-right" data-aos-delay="100">
+                            <i class="fa-brands fa-css3-alt progressbar-icon"></i>
+                            <p>CSS</p>
+                        </div>
+                    </div>
+                    <div class="progressbar" id="js" title="JavaScript">
+                        <div class="jauge" data-aos="fade-right" data-aos-delay="200">
+                            <i class="fa-brands fa-js progressbar-icon"></i>
+                            <p>JavaScript</p>
+                        </div>
+                    </div>
+                    <div class="progressbar" id="vuejs" title="Framework Vue.js 3">
+                        <div class="jauge" data-aos="fade-right" data-aos-delay="300">
+                            <i class="fa-brands fa-vuejs progressbar-icon"></i>
+                            <p>Vue.js 3</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about--school">
+                    <h3>ENSEIGNEMENT ET DIPLOMES</h3>
+                    <div class="school--card" id="first-card">
+                        <div class="card--icon" data-aos="zoom-in" data-aos-delay="1200">
+                            <i class="fa-solid fa-school"></i>
+                        </div>
+                        <div class="card--text">
+                            <h4>Terminale générale</h4>
+                            <p>Spécialité Sciences de l'Informatique</p>
+                        </div>
+                    </div>
+                    <div class="school--card">
+                        <div class="card--icon" data-aos="zoom-in" data-aos-delay="1400">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <div class="card--text">
+                            <h4>Diplome nationnal du brevet</h4>
+                            <p>Mention Très bien</p>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+        <div class="about--bouton">
+            <a href="" class="cta" title="Télécharger mon CV"><i class="fa-solid fa-file-arrow-down icon"></i> TELECHARGER MON CV</a>
+        </div>
+    </section>
+
+    <section id="projets" class="black--section">
+        <div class="container--projets">
+            <h2>Mes dernières réalisations</h2>
+            <div class="container--cards">
+                <div class="projet--card" id="projet-1" data-aos="fade-left">
+                    <img src="assets/img/Capture-removebg-preview.png" alt="Image site web">
+                    <h3>Portfolio</h3>
+                    <div class="tags">
+                        <p>/SiteVitrine</p>
+                        <p>/SEO</p>
+                    </div>
+                    <p class="description">Réalisé en 2022, cet ancien site pour ma propre entreprise est un site vitrine de 3 pages, essentiellement codé en Html, Css et Javascript.</p>
+
+                    <div class="projet--bouton">
+                        <a href="" class="cta cta--white"><i class="fa-solid fa-paperclip icon"></i> VOIR LE PROJET</a>
+                    </div>
+                </div>
+                <div class="projet--card" id="projet-2" data-aos="fade-left" data-aos-delay="100">
+                    <img src="assets/img/Capture-removebg-preview.png" alt="Image site web">
+                    <h3>Rim'Ailleurs</h3>
+                    <div class="tags">
+                        <p>/SiteVitrine</p>
+                        <p>/SEO</p>
+                    </div>
+                    <p class="description">Réalisé en 2022, cet ancien site pour ma propre entreprise est un site vitrine de 3 pages, essentiellement codé en Html, Css et Javascript.</p>
+                    <div class="projet--bouton">
+                        <a href="" class="cta cta--white"><i class="fa-solid fa-paperclip icon"></i> VOIR LE PROJET</a>
+                    </div>
+                </div>
+                <div class="projet--card" id="projet-3" data-aos="fade-left" data-aos-delay="200">
+                    <img src="assets/img/Capture-removebg-preview.png" alt="Image site web">
+                    <h3>Gaillard Psychologue</h3>
+                    <div class="tags">
+                        <p>/SiteVitrine</p>
+                        <p>/SEO</p>
+                    </div>
+                    <p class="description">Réalisé en 2022, cet ancien site pour ma propre entreprise est un site vitrine de 3 pages, essentiellement codé en Html, Css et Javascript.</p>
+                    <div class="projet--bouton">
+                        <a href="" class="cta cta--white"><i class="fa-solid fa-paperclip icon"></i> VOIR LE PROJET</a>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="cta"><i class="fa-solid fa-arrow-up-right-from-square icon"></i> VOIR TOUS LES PROJETS</a>
+        </div>
+    </section>
+
+    <section id="prestations" class="white--section">
+        <div class="background"></div>
+        <div class="container--prestations">
+            <h2>Mes prestations</h2>
+            <div class="prestations">
+                <ul class="cards--list">
+                    <li class="prestation">
+                            <img src="assets/img/Web_design_SVG.svg" alt=""  data-aos="fade-down">
+                            <div class="prestation--cara">
+                                <h3  data-aos="fade-down">CREATION DE SITE VITRINE</h3>
+                                <p class="orange strong"  data-aos="fade-down">A partir de 220€ HT*</p>
+                                <ul  data-aos="fade-down">
+                                    <li>Design de l'interface UI/UX</li>
+                                    <li>Développement du site (HTML, CSS, Javascript)</li>
+                                    <li>Page d'accueil + 1 page de mentions légales</li>
+                                    <li>Optimisation du référencement/SEO</li>
+                                    <li>Maintenance offerte**</li>
+                                </ul>
+                            </div>
+                    </li>
+                    <li class="prestation">
+                            <img src="assets/img/Web_design_SVG.svg" alt=""  data-aos="fade-down" data-aos-delay="100">
+                            <div class="prestation--cara">
+                                <h3  data-aos="fade-down" data-aos-delay="100">CREATION DE SITE E-COMMERCE</h3>
+                                <p class="orange strong"  data-aos="fade-down" data-aos-delay="100">A partir de 350€ HT*</p>
+                                <ul  data-aos="fade-down" data-aos-delay="100">
+                                    <li>Design de l'interface UI/UX</li>
+                                    <li>Développement du site (Framework Vue.js)</li>
+                                    <li>2 pages + 1 page de mentions légales</li>
+                                    <li>Optimisation du référencement/SEO</li>
+                                    <li>Maintenance offerte**</li>
+                                </ul>
+                            </div>
+                    </li>
+                    <li class="prestation">
+                        <img src="assets/img/Web_design_SVG.svg" alt=""  data-aos="fade-down" data-aos-delay="200">
+                        <div class="prestation--cara">
+                            <h3  data-aos="fade-down" data-aos-delay="200">REFONTE DE SITE INTERNET</h3>
+                            <p class="orange strong"  data-aos="fade-down" data-aos-delay="200">A partir de 49€ HT*</p>
+                            <ul  data-aos="fade-down" data-aos-delay="200">
+                                <li>Refonte de l'interface UI/UX</li>
+                                <li>Modification du code existant</li>
+                                <li>Optimisation du référencement/SEO</li>
+                                <li>Optimisation des paramètres d'accessibilité</li>
+                                <li>Maintenance offerte**</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <p class="conditions">*Forfait de base type, TVA non applicable. **Maintenance offerte dans les 6 premiers mois après le rendu du projet finalisé, comprenant notamment la publication du site par le biais d'un hébergeur (frais d'hébergement non compris) ainsi que des correctifs (bugs ou sécurité) et de légères mises à jour de l'interface.</p>
+            <a href="" class="cta">OBTENIR UN DEVIS</a>
+        </div>
+    </section>
+
+    <section class="black--section" id="infopresta">
+        <div class="container--infopresta">
+            <h2>Comprendre les 5 étapes dans la <br><span class="orange">création d'un site internet</span></h2>
+            <p>Découvrez les différentes étapes permettant la réalisation de votre site internet sur-mesure.</p>
+            <p>La création de sites internet demande de la créativité mais également une rigueur technique.</p>
+            <a href="" class="cta">EN SAVOIR PLUS</a>
+        </div>
+    </section>
+
+    <section id="contact" class="white--section">
+        <div class="container--contact">
+            <div class="formulaire">
+                <form action="">
+                    <div class="form--principal">
+                        <div class="contact--title">
+                            <div class="contact--icon">
+                                <i class="fa-regular fa-address-book"></i>
+                            </div>
+                            <h2>Me contacter</h2>
+                        </div>
+                        <p>Vous souhaitez obtenir un devis ou simplement obtenir quelques renseignements ? Contactez-moi via ce formulaire ou grâce à mes réseaux ci-dessous.</p>
+                        <ol>
+                            <li>
+                                <h3>1. Qui êtes-vous ?</h3>
+                                <div class="form--user double-champ" data-aos="fade-down">
+                                    <div class="gauche">
+                                        <label for="nom">Nom</label>
+                                        <input type="text" name="nom" id="nom" title="Renseignez votre nom" placeholder="Nom">
+                                    </div>
+                                    <div class="droite">
+                                        <label for="prenom">Prénom</label>
+                                        <input type="text" name="prenom" id="prenom" title="Renseignez votre prénom" placeholder="Prénom">
+                                    </div>
+                                </div>
+                                <div class="email simple-champ" data-aos="fade-down" data-aos-delay="100">
+                                    <label for="email">Adresse mail</label>
+                                    <input type="email" name="email" id="email" title="Renseignez votre adresse mail" placeholder="contact@gmail.com">
+                                </div>
+                                <div class="form--society double-champ" data-aos="fade-down" data-aos-delay="200">
+                                    <div class="gauche">
+                                        <label for="tel">N° de téléphone</label>
+                                        <input type="tel" name="tel" id="tel" title="Renseignez votre n° de téléphone" placeholder="06 00 00 00 00">
+                                    </div>
+                                    <div class="droite">
+                                        <label for="societe">Société</label>
+                                        <input type="text" name="societe" id="societe" title="Renseignez le nom de votre société" placeholder="Société">
+                                    </div>
+                                </div>
+                            </li>
+                            <li data-aos="fade-down" data-aos-delay="300">
+                                <h3>2. Quel est l'objet de votre demande ?</h3>
+                                <select name="objet" id="objet" title="Sélectionnez l'objet de votre demande">
+                                    <optgroup label="Que puis-je faire pour vous ?">
+                                        <option value="1">Je souhaite obtenir des renseignements</option>
+                                        <option value="2">Je souhaite obtenir un devis</option>
+                                        <option value="3">Demande de partenariat</option>
+                                    </optgroup>
+                                </select>
+                            </li>
+                        </ol>
+                    </div>          
+                    <aside class="contact--form" data-aos="fade-left" data-aos-delay="200">
+                        <h3>3. Ecrivez votre message</h3>
+                        <div class="simple-champ">
+                            <textarea name="message" id="message" title="Ecrivez votre message" placeholder="Ecrivez votre message"></textarea>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" name="newsletter" id="newsletter" title="Cochez pour recevoir des infos par email">
+                            <label for="newsletter">Je souhaite recevoir des informations par email</label>
+                        </div>
+                        <button type="submit" title="Envoyer votre message" class="cta">ENVOYER <i class="fa-regular fa-paper-plane icon"></i></button>
+                    </aside>
+                </form>
+                <div class="contact--liens">
+                    <ul>
+                        <li ><a href=""><i class="fa-brands fa-github"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                        <li><a href=""><i class="fa-solid fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="black--section" id="footer">
+        <div class="container--footer">
+            <div class="footer--infos">
+                <p class="strong">Besoin d'un site internet pour booster votre activité sur internet ?</p>
+                <a href="" class="cta reversed">ME CONTACTER</a>
+            </div>
+
+            <ul class="footer--nav">
+                <li>
+                    <h3>NAVIGATION</h3>
+                    <ul class="footer--liste">
+                        <li><a href="#" class="hover-effect">Accueil</a></li>
+                        <li><a href="#" class="hover-effect">A propos</a></li>
+                        <li><a href="#" class="hover-effect">Projets</a></li>
+                        <li><a href="#" class="hover-effect">Prestations</a></li>
+                        <li><a href="#" class="hover-effect">Blog</a></li>
+                        <li><a href="#" class="hover-effect">Contact</a></li>
+                        <li><a href="#" class="hover-effect">Plan du site</a></li>
+                        <li><a href="#" class="hover-effect">Mentions légales</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>PRESTATIONS</h3>
+                    <ul class="footer--liste empilee">
+                        <li><a href="#" class="hover-effect">Site vitrine</a></li>
+                        <li><a href="#" class="hover-effect">Site e-commerce</a></li>
+                        <li><a href="#" class="hover-effect">Refonte de site web</a></li>
+                        <li><a href="#" class="hover-effect">Autres services</a></li>
+                    </ul>
+
+                    <h3>ME SUIVRE</h3>
+                    <ul class="footer--reseaux">
+                        <li><a href=""><i class="fa-brands fa-github"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                        <li><a href=""><i class="fa-solid fa-envelope"></i></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>INFORMATIONS PRATIQUES</h3>
+                    <ul class="footer--liste empilee">
+                        <li><a href="#" class="hover-effect">Tel : 06 00 00 00 00</a></li>
+                        <li><a href="#" class="hover-effect">Mail : contact@lubinfongarland.dev</a></li>
+                        <li><a href="#" class="hover-effect">Me contacter</a></li>
+                        <li><a href="#" class="hover-effect">CGV</a></li>
+                    </ul>
+
+                    <a href="" class="cta reversed" id="faq">FAQ</a>
+                </li>
+            </ul>
+        </div>
+        <div class="bandeau">
+            <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" id="licence"><img alt="Licence Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>Ce(tte) œuvre est mise à disposition selon les termes de la <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Licence Creative Commons Attribution - Pas d’Utilisation Commerciale - Partage dans les Mêmes Conditions 4.0 International</a>
+        </div>
+    </footer>
+
+    <!--Scripts-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://kit.fontawesome.com/33ad9a8292.js" crossorigin="anonymous"></script> <!--Icones (Font Awesome)-->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
