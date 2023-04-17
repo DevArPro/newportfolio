@@ -10,7 +10,7 @@ Accéder au site : https://devarpro.github.io/new_portfolio.
 
 ### Version du projet
 
-**Version :** 0.4.1
+**Version :** 0.4.2
 
 **Dernière mise à jour :** *Optimisation et accessiblité pour les utilisateurs de lecteurs et d'assistances vocales*
 
