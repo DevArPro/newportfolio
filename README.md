@@ -10,9 +10,9 @@ Accéder au site : https://devarpro.github.io/new_portfolio.
 
 ### Version du projet
 
-**Version :** 0.3.2
+**Version :** 0.4.1
 
-**Dernière mise à jour :** *Inplémentation d'un preloader*
+**Dernière mise à jour :** *Optimisation et accessiblité pour les utilisateurs de lecteurs et d'assistances vocales*
 
 ### Description du projet 
 
@@ -20,7 +20,7 @@ Ce site web statique, constitué d'une unique page pour le moment, est mon futur
 
 **Aperçu du projet final :**
 
-- 14 pages, évolution possible suite à la publication de nouveaux articles
+- 18 pages, évolution possible suite à la publication de nouveaux articles
 - Formulaire de contact
 - Newsletter
 - Accessibilité : Accessible en plusieurs langues, adaptés à tout types et résolutions d'écrans dont les lecteurs pour personnes malvoyantes
