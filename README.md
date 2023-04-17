@@ -1,7 +1,7 @@
 # New portfolio website 
 
 ⚠️ **Warning : Website adapted to 1920x1080px screens only for now**
-! **Important : Les prix indiqués et les coordonnées renseignées (Numéros de téléphone, adresses mail, ...) sont factices/utilisés à titre d'exemple uniquement**
+// **Important : Les prix indiqués et les coordonnées renseignées (Numéros de téléphone, adresses mail, ...) sont factices/utilisés à titre d'exemple uniquement**
 
 👋 Besoin d'un nouveau site web ? Je suis un développeur web front-end basé entre Lyon, Vienne et Grenoble en Isère. Je réalise vos sites internet pour votre entreprise sur demande et pour un prix abordable.
 
