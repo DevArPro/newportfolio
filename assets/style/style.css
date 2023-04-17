@@ -8,58 +8,41 @@
     scroll-behavior: smooth;
 }
 
-body {
-    background-color: #fff;
-    position: relative;
-    overflow-x: hidden;
-    color: white;
-    background-image: url("../img/background1.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 100vw;
-    height: 100vh;
-    max-width: 1920px;
-}
 
-/*Polices*/
-@font-face {
-    font-family: "gilroy";
-    src: url(../fonts/Gilroy-Light.otf);
-}
-@font-face {
-    font-family: "gilroy";
-    src: url(../fonts/Gilroy-ExtraBold.otf);
-    font-weight: bold;
-}
+/*===== PARAMETRES GENERAUX =====*/
 
-/*Barre de scroll custom - Adaptation navigateurs*/
-body::-webkit-scrollbar {
-    width: 13px;
-    z-index: -10;
-}
-body::-webkit-scrollbar-track {
-    /*Scrollbar Background*/
-    background: rgb(63, 63, 63);
-}
-body::-webkit-scrollbar-thumb {
-    /*Scrollbar Element bouton thumb*/
-    background: rgb(143, 143, 143);
-    border: 3px solid rgb(63, 63, 63);
-    border-radius: 15px;
-}
-body::-webkit-scrollbar-thumb:hover {
-    /*Scrollbar Thumb hover*/
-    background: rgb(180, 180, 180);
-}
 
-a, button {
-    color: white;
-}
+/*----- COULEURS -----*/
 .orange {
     color: rgb(255, 115, 0);
 }
 .black {
     color: black;
+}
+
+/*----- STYLE -----*/
+.strong {
+    font-weight: bold;
+}
+h3 {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+/*----- FONTS -----*/
+@font-face { /*Light*/
+    font-family: "gilroy";
+    src: url(../fonts/Gilroy-Light.otf);
+}
+@font-face { /*Bold*/
+    font-family: "gilroy";
+    src: url(../fonts/Gilroy-ExtraBold.otf);
+    font-weight: bold;
+}
+
+/*----- BOUTONS -----*/
+a, button {
+    color: white;
 }
 a.hover-effect.orange::before {
     background-color: rgb(255, 115, 0);
@@ -89,7 +72,7 @@ a.hover-effect:hover::before {
     transform-origin: left;
     transform: scaleX(1);
 }
-a.cta, button.cta {
+a.cta, button.cta { /*Boutons CTA*/
     padding: 15px 30px;
     background-color: rgb(255, 115, 0);
     font-weight: bold;
@@ -120,7 +103,7 @@ a.cta--white:hover {
     background-color: white;
     color: black;
 }
-.cta .icon {
+.cta .icon { /*Icones boutons*/
     margin-right: 5px;
 }
 button .icon {
@@ -128,10 +111,6 @@ button .icon {
     margin-left: 5px;
 }
 
-
-.strong {
-    font-weight: bold;
-}
 section h2 {
     font-size: 1.9em;
 }
@@ -142,16 +121,8 @@ section h2 {
     margin-right: 10px;
     font-weight: bold;
 }
-@keyframes rotation-barre {
-    0% {
-        transform: rotateZ(0deg);
-    }
-    100% {
-        transform: rotateZ(360deg);
-    }
-}
 
-
+/*----- SECTIONS -----*/
 .white--section {
     color: black;
 }
@@ -162,6 +133,30 @@ section h2 {
     color: white;
 }
 
+
+/*===== ELEMENTS SPECIFIQUES ======*/
+
+/*----- CUSTOM SCROLLBAR -----*/
+body::-webkit-scrollbar {
+    width: 13px;
+    z-index: -10;
+}
+body::-webkit-scrollbar-track {
+    /*Scrollbar Background*/
+    background: rgb(63, 63, 63);
+}
+body::-webkit-scrollbar-thumb {
+    /*Scrollbar Element bouton thumb*/
+    background: rgb(143, 143, 143);
+    border: 3px solid rgb(63, 63, 63);
+    border-radius: 15px;
+}
+body::-webkit-scrollbar-thumb:hover {
+    /*Scrollbar Thumb hover*/
+    background: rgb(180, 180, 180);
+}
+
+/*----- BOUTON HAUT DE PAGE -----*/
 #bouton-page-up {
     display: none;
 }
@@ -188,6 +183,7 @@ section h2 {
     background-color: rgb(255, 115, 0);
 }
 
+/*----- PAGE DE CHARGEMENT - LOADER -----*/
 .loader {
     position: absolute;
     top: 0;
@@ -203,10 +199,6 @@ section h2 {
     align-items: center;
     justify-content: center;
 }
-.fondu-sortant {
-    opacity: 0;
-    transition: opacity 0.4s ease-out;
-}
 #loader {
     display: block;
     width: 150px;
@@ -218,7 +210,6 @@ section h2 {
     -webkit-animation: spin 2s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
     animation: spin 2s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
 }
- 
 #loader:before {
     content: "";
     position: absolute;
@@ -231,7 +222,6 @@ section h2 {
     -webkit-animation: spin 3s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
       animation: spin 3s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
 }
- 
 #loader:after {
     content: "";
     position: absolute;
@@ -244,7 +234,7 @@ section h2 {
     -webkit-animation: spin 1.5s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
       animation: spin 1.5s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
 }
- 
+/*Animation LOADER*/
 @-webkit-keyframes spin {
     0%   {
         -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
@@ -271,6 +261,23 @@ section h2 {
 }
 
 
+/*===== ELEMENTS COMMUNS ======*/
+
+/*----- BODY -----*/
+body {
+    background-color: #fff;
+    position: relative;
+    overflow-x: hidden;
+    color: white;
+    background-image: url("../img/background1.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    max-width: 1920px;
+}
+
+/*----- HEADER -----*/
 header {
     width: 100vw;
     background-color: transparent;
@@ -280,12 +287,12 @@ header {
     color: black;
     transition: 0.5s;
 }
-header.sticky {
+header.sticky { /*Sticky = Quand Scroll > 0*/
     background-color: rgb(34, 34, 34);
     border-bottom: 1px solid rgb(136, 136, 136);
     color: white;
 }
-.bandeau--informations {
+.bandeau--informations { /*Bandeau au dessus du header principal*/
     height: 32px;
     padding: 0px 120px;
     width: calc(100vw - 240px);
@@ -305,17 +312,7 @@ header.sticky .bandeau--informations {
 .bandeau--informations a:hover {
     color: #ffffff;
 }
-/*.bandeau--deco {
-    background-color: rgb(19, 19, 19);
-    background-image: url('../img/bandeau.svg');
-    background-size: cover;
-    background-position: center;
-    height: 100%;
-    width: 40vw;
-    transform: skewX(-35deg);
-    margin: 0 20px;
-}*/
-.bandeau--contact {
+.bandeau--contact { /*Partie gauche*/
     display: flex;
     align-items: center;
 }
@@ -329,7 +326,7 @@ header.sticky .bandeau--informations {
 .bandeau--contact a:nth-child(2) {
     margin: 0 40px;
 }
-.bandeau--informations ul {
+.bandeau--informations ul { /*Partie droite (liste des réseaux)*/
     display: flex;
     align-items: center;
     justify-content: center;
@@ -337,13 +334,13 @@ header.sticky .bandeau--informations {
 .bandeau--informations ul li:nth-child(2) {
     margin: 0 20px;
 }
-.header--principal {
+.header--principal { /*Header principal*/
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 80px;
 }
-.header--gauche {
+.header--gauche { /*Partie gauche principale*/
     display: flex;
     align-items: center;
     justify-content: center;
@@ -356,10 +353,10 @@ header.sticky .bandeau--informations {
 .header--gauche h2 {
     font-size: 1.2em;
 }
-.menu--icon {
+.menu--icon { /*Menu mobile*/
     display: none;
 }
-#nav-menu ul {
+#nav-menu ul { /*Partie droite principale (navigation)*/
     display: flex;
     align-items: center;
     justify-content: center;
@@ -407,7 +404,64 @@ header.sticky #nav-menu ul li a:hover {
     border-top: 2px solid rgb(87, 87, 87);
 }
 
+/*----- FOOTER -----*/
+.container--footer {
+    width: 70vw;
+    padding: 30px 15vw;
+}
+.footer--infos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer--infos p {
+    margin-right: 30px;
+}
+ul.footer--nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0 40px;
+    padding-top: 40px;
+    border-top: 1px solid rgb(136, 136, 136);
+}
+ul.footer--liste.empilee {
+    margin-bottom: 40px;
+}
+#footer li {
+    margin-bottom: 5px;
+}
+#footer li a {
+    font-size: 0.9em;
+}
+#faq {
+    margin-top: 30px;
+}
+.footer--reseaux { /*Partie réseaux sociaux*/
+    display: flex;
+    align-items: center;
+    font-size: 1.1em;
+}
+.footer--reseaux li:not(:last-child) {
+    margin-right: 10px;
+}
+.bandeau { /*Bandeau de licence en bas du footer principal*/
+    width: calc(100% - 100px);
+    padding: 15px 50px;
+    background-color: rgb(14, 14, 14);
+    font-size: 0.8em;
+    display: flex;
+    align-items: center;
+}
+.bandeau img {
+    height: 15px;
+    margin-right: 10px;
+}
 
+
+/*===== INDEX.html =====*/
+
+
+/*----- MAIN - HEROBANNER -----*/
 #herobanner {
     color: black;
     height: calc(100vh - 112px);
@@ -421,7 +475,7 @@ header.sticky #nav-menu ul li a:hover {
     align-items: center;
     justify-content: space-between;
 }
-.contenu--gauche {
+.contenu--gauche { /*Partie gauche (texte)*/
     max-width: 40%;
     padding: 0px 0px 100px 15vw;
 }
@@ -441,7 +495,7 @@ header.sticky #nav-menu ul li a:hover {
     line-height: 1.3em;
     margin-bottom: 50px;
 }
-.contenu--droit {
+.contenu--droit { /*Partie droite (Image)*/
     max-width: 50%;
     height: 100%;
     position: relative;
@@ -452,7 +506,7 @@ header.sticky #nav-menu ul li a:hover {
     right: 0;
     height: 85vh;
 }
-#scroll-down {
+#scroll-down { /*Image souris scroll vers le bas*/
     position: absolute;
     bottom: 0;
     left: 0;
@@ -461,7 +515,7 @@ header.sticky #nav-menu ul li a:hover {
     transform: translate(-50%);
     animation: scrolldown 2.5s;
 }
-@keyframes scrolldown {
+@keyframes scrolldown { /*Animation scroll down (Apparition 2.5s)*/
     0% {
         opacity: 0;
     }
@@ -474,6 +528,7 @@ header.sticky #nav-menu ul li a:hover {
 }
 
 
+/*----- SLIDER - SECTION INFORMATIONS -----*/
 #infosection {
     position: relative;
     height: 300px;
@@ -488,7 +543,7 @@ header.sticky #nav-menu ul li a:hover {
     justify-content: center;
     padding-bottom: 30px;
 }
-.onglets {
+.onglets { /*Boutons onglets (ronds)*/
     height: 13px;
     width: 13px;
     border-radius: 50%;
@@ -501,8 +556,7 @@ header.sticky #nav-menu ul li a:hover {
 .onglets.onglet-actif {
     background-color: rgb(255, 115, 0);
 }
-
-.contenu {
+.contenu { /*Contenu des onglets*/
     position: absolute;
     opacity: 0;
     height: calc(100% - 150px);
@@ -529,7 +583,7 @@ header.sticky #nav-menu ul li a:hover {
 }
 .activeContenu {
     animation: fade 0.8s forwards;
-} @keyframes fade {
+} @keyframes fade { /*Animation apparition du contenu*/
     from {
         opacity: 0;
     } to {
@@ -537,6 +591,8 @@ header.sticky #nav-menu ul li a:hover {
     }
 }
 
+
+/*----- SECTION A PROPOS -----*/
 #about {
     width: 70vw;
     padding: 150px 15vw;
@@ -553,12 +609,10 @@ header.sticky #nav-menu ul li a:hover {
     border-radius: 20px;
     padding: 30px;
 }
-
 .about--principal {
     width: 30vw;
 }
-
-.about--texte {
+.about--texte { /*Partie supérieure gauche*/
     margin-bottom: 30px;
 }
 .about--title {
@@ -584,23 +638,11 @@ header.sticky #nav-menu ul li a:hover {
     align-items: center;
     justify-content: space-between;
 }
-/*.image--profil {
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    background-color: rgb(231, 231, 231);
-    background-image: url('../img/portrait.png');
-    background-position: center;
-    background-size: cover;
-    margin-bottom: 20px;
-}*/
 .about--texte p {
     margin-bottom: 15px;
     font-size: 1.1em;
 }
-
-
-.about--loisirs ul {
+.about--loisirs ul { /*Partie inférieure gauche (centres d'interet)*/
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -623,8 +665,7 @@ header.sticky #nav-menu ul li a:hover {
     font-size: 1.9em;
     margin-bottom: 10px;
 }
-
-.about--competences {
+.about--competences { /*Partie supérieure droite (Compétences)*/
     margin-bottom: 40px;
 }
 .about--competences .progressbar {
@@ -663,8 +704,7 @@ header.sticky #nav-menu ul li a:hover {
     width: calc(60% - 40px);
     animation: vuejs 2s;
 }
-
-.school--card {
+.school--card { /*Partie inférieure droite (écoles/diplomes)*/
     display: flex;
     align-items: center;
     justify-content: left;
@@ -685,12 +725,12 @@ header.sticky #nav-menu ul li a:hover {
     justify-content: center;
     margin-right: 15px;
 }
-
-.about--bouton {
+.about--bouton { /*CTA en savoir plus*/
     margin-top: 50px;
 }
 
 
+/*----- SECTION MES PROJETS -----*/
 .container--projets {
     width: 70vw;
     padding: 150px 15vw;
@@ -735,19 +775,10 @@ header.sticky #nav-menu ul li a:hover {
 }
 
 
+/*----- SECTION MES PRESTATIONS -----*/
 #prestations {
     background-color: #ffffff;
     position: relative;
-}
-.background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.849);
-    z-index: -10;
-
 }
 .container--prestations {
     width: 70vw;
@@ -791,7 +822,6 @@ header.sticky #nav-menu ul li a:hover {
     margin-top: 30px;
     color: rgb(87, 87, 87);
     height: 100%;
-
 }
 .prestation ul li:not(:last-child) {
     padding-bottom: 15px;
@@ -806,21 +836,8 @@ header.sticky #nav-menu ul li a:hover {
     margin-bottom: 60px;
 }
 
-#infopresta {
-    position: relative;
-}
-#infopresta .bg--img {
-    background-image: url(../img/background-circles.svg);
-    background-size: cover;
-    width: calc(100% - 8px);
-    height: calc(100% - 8px);
-    position: absolute;
-    margin-top: 4px;
-    top: 0;
-    left: 0;
-    z-index: 0;
-    filter: blur(4px);
-}
+
+/*----- SECTION ARTICLE 5 ETAPES -----*/
 .container--infopresta {
     width: 70vw;
     padding: 50px 15vw;
@@ -838,12 +855,13 @@ header.sticky #nav-menu ul li a:hover {
     margin-top: 30px;
 }
 
+/*----- SECTION CONTACT -----*/
 #contact {
     width: 70vw;
     padding: 150px 15vw;
     background-color: white;
 }
-#contact form {
+#contact form { /*Formulaire*/
     display: flex;
     justify-content: space-between;
 }
@@ -853,7 +871,7 @@ header.sticky #nav-menu ul li a:hover {
     justify-content: left;
     margin-bottom: 30px;
 }
-.contact--icon  {
+.contact--icon {
     height: 60px;
     width: 60px;
     border-radius: 50%;
@@ -943,7 +961,7 @@ textarea {
     font-size: 1em;
     cursor: pointer;
 }
-.contact--form {
+.contact--form { /*Partie centrale inférieure (réseaux sociaux)*/
     border-left: 1px solid rgb(180, 180, 180);
     padding-left: 50px;
 }
@@ -968,60 +986,4 @@ textarea {
 .contact--liens ul li:last-child {
     margin-right: 30px;
     color: rgb(172, 172, 172);
-}
-
-.container--footer {
-    width: 70vw;
-    padding: 30px 15vw;
-}
-.footer--infos {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.footer--infos p {
-    margin-right: 30px;
-}
-ul.footer--nav {
-    display: flex;
-    justify-content: space-between;
-    margin: 30px 0 40px;
-    padding-top: 40px;
-    border-top: 1px solid rgb(136, 136, 136);
-}
-h3 {
-    margin-bottom: 20px;
-    font-size: 1.2em;
-}
-ul.footer--liste.empilee {
-    margin-bottom: 40px;
-}
-#footer li {
-    margin-bottom: 5px;
-}
-#footer li a {
-    font-size: 0.9em;
-}
-#faq {
-    margin-top: 30px;
-}
-.footer--reseaux {
-    display: flex;
-    align-items: center;
-    font-size: 1.1em;
-}
-.footer--reseaux li:not(:last-child) {
-    margin-right: 10px;
-}
-.bandeau {
-    width: calc(100% - 100px);
-    padding: 15px 50px;
-    background-color: rgb(14, 14, 14);
-    font-size: 0.8em;
-    display: flex;
-    align-items: center;
-}
-.bandeau img {
-    height: 15px;
-    margin-right: 10px;
 }
