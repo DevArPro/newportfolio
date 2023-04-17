@@ -35,5 +35,5 @@ Pour la réalisation de ce nouveau portfolio, je me suis dirigé vers les techno
 
 ## Licence 
 
-Cette site est sous licence CreativeCommons : Voir au bas de la page d'accueil pour plus d'informations.
+Ce site est sous licence CreativeCommons : Voir au bas de la page d'accueil pour plus d'informations.
 
