@@ -14,6 +14,14 @@ Accéder au site : https://devarpro.github.io/new_portfolio.
 
 **Dernière mise à jour :** *Optimisation et accessiblité pour les utilisateurs de lecteurs et d'assistances vocales*
 
+**Mises à jour prochaines :** 
+- Adaptation à tout écran (appareils mobiles, tablettes, ordinateurs de plus faible résolution)
+- Création des pages manquantes essentielles
+- Mise en service du formulaire et de la newsletter
+- Optimisation du référencement
+- Création des diverses pages manquantes non essentielles
+- Disponiblité du site en plusieurs langues : Français et anglais.
+
 ### Description du projet 
 
 Ce site web statique, constitué d'une unique page pour le moment, est mon futur portfolio pour mes activités de freelance. Vous pourrez accéder à ma présentation personnelle, mes réalisations, mes services ainsi qu'à un formulaire et mes moyens de contact en quelques clics. 
