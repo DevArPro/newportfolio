@@ -8,7 +8,6 @@ const navMenu = document.getElementById("nav-menu"),
   contenu = document.querySelectorAll(".contenu"),
   loader = document.querySelector('.loader');
 let index = 0; /*-> Slider*/
-/*De nombreuses variables non utilisées, en attente de la refonte du code correspondant au menu mobile*/
 
 /*----- PRELOADER -----*/
 window.addEventListener('load', () => {
@@ -18,8 +17,11 @@ window.addEventListener('load', () => {
 /*----- STICKY HEADER & BOUTON HAUT DE PAGE -----*/
 window.addEventListener("scroll", function () {
   const header = document.querySelector("header");
-  header.classList.toggle("sticky", window.scrollY > 0);
-  buttonUp.classList.toggle("block", window.scrollY > 0);
+  header.classList.toggle("sticky", window.scrollY > 0); /*Maintien le header affiché au scroll*/
+  buttonUp.classList.toggle("block", window.scrollY > 0); /*Ne s'active que lorsque l'user est plus bas que le haut de la page*/
+  if (navMenu.className === "responsive", window.scrollY > 0) { /*Pour empecher le scroll en maintenant le menu mobile ouvert*/
+    navMenu.classList.remove("responsive");
+  };
 });
 
 /*----- MENU MOBILE -----*/
@@ -66,10 +68,4 @@ onglets.forEach((onglet) => {
     }
   });
 });
-
-/*
-toggleMenu.addEventListener("click", () => {
-  navMenu.classList.toggle("show");
-  body.classList.toggle("hidden");
-});*/
 
