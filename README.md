@@ -18,8 +18,9 @@ Accéder au site : https://devarpro.github.io/new_portfolio.
 
 **Dernière mise à jour :** *Optimisation et accessiblité pour les utilisateurs de lecteurs et d'assistances vocales*
 
+**Mise à jour en cours :** *Adaptation à tout écran (appareils mobiles, tablettes, ordinateurs de plus faible résolution)*
+
 **Mises à jour prochaines :** 
-- Adaptation à tout écran (appareils mobiles, tablettes, ordinateurs de plus faible résolution)
 - Création des pages manquantes essentielles
 - Mise en service du formulaire et de la newsletter
 - Optimisation du référencement
